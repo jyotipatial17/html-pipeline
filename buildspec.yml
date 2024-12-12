@@ -1,8 +1,8 @@
 version: 0.2
 phases:
-  build:
-    commands:
-      - echo "Build stage complete"
+  commands:
+      - mkdir -p output
+      - cp -r * output/
 artifacts:
   files:
-    - '**/*'
+    - 'output/**/*'
