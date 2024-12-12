@@ -1,8 +1,7 @@
 version: 0.2
 phases:
   commands:
-      - mkdir -p output
-      - cp -r * output/
+      - echo "build phase"
 artifacts:
   files:
-    - 'output/**/*'
+    - '**/*'
