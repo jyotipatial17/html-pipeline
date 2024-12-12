@@ -1,10 +1,7 @@
 #!/bin/bash
 echo "Updating package manager..."
-apt-get update -y
-
-echo "Installing Apache..."
-apt-get install apache2 -y
+sudo apt-get update -y
 
 echo "Starting Apache service..."
-systemctl start apache2
-systemctl enable apache2
+sudo systemctl start apache2
+sudo systemctl enable apache2
